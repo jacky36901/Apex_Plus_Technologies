@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Add Scenario</title>
+    <link type="text/css" rel="stylesheet" href="stylee.css">
+</head> 
+<body>
+    <center>
+        <h1 style="color:grey";>Add Scenario</h1>
+        </center>
+    <table>
+        <tr>
+            <td>
+                <form autocomplete="off" onsubmit="onformsubmit()">
+                    <div>
+                        <label for="ScenarioName"> Scenario Name</label>
+                        <input type="text" name="ScenarioName" id="ScenarioName">
+                    </div>
+
+                    <div>
+                        <label for="ScenarioTime">Scenario Time</label>
+                        <input type="text" name="ScenarioTime" id="ScenarioTime">
+                    </div>
+
+                    <div class="form_action--button">
+                        <input type="submit" value="Add">
+                        <input type="reset" value="Reset">
+                    </div>
+                </form>
+            </td>
+        </tr>
+    </table class="list" id="StoreList">
+    <script type="text/javascript" src="./script.js"></script>
+</body>
+</html>

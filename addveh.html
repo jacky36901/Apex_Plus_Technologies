@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Add Vehicle</title>
+    <link type="text/css" rel="stylesheet" href="stylee.css">
+</head>
+<body>
+    <center>
+    <h1 style="color:grey";>Add Vehicle</h1>
+    </center>
+    <table>
+        <tr>
+            <td>
+                <form autocomplete="off" onsubmit="onformsubmit()">
+                    <div>
+                        <label for="ScenarioName"> Vehicle Name</label>
+                        <input type="text" placeholder="Vehicle Name" required name="VehicleName" id="VehicleName">
+                    </div>
+
+                    <div>
+                        <label for="ScenarioTime">Postion X</label>
+                        <input type="number" placeholder="PositionX" required name="PositionX" id="PositionX" min="1" max="800">
+                    </div>
+
+                    <div>
+                        <label for="PositionY">Postion y</label>
+                        <input type="number" placeholder="Position Y" required name="PositionY" id="PositionY" min="1" max="800">
+                        
+                    </div>
+
+                    <div>
+                        <label for="PositionX">Speed</label>
+                        <input type="number" placeholder="Speed" required name="Speed" id="Speed">
+                    </div>
+
+                    <div>
+                        <label for="ScenarioList">Scenario List</label>
+                        <input type="text" placeholder="Scenario List" required name="ScenarioList" id="ScenarioList">
+                        
+                    </div>
+
+                    <div>
+                        <label for="Direction">Direction</label>
+                        <select id="Direction" name="Direction">
+                        <option value="Towards">Towards</option>
+                        <option value="Backwards">Backwards</option>
+                        <option value="Upwards">Upwards</option>
+                        <option value="Downwards">Downwards</option>
+                        </select>
+                    </div>
+
+
+                    <div class="form_action--button">
+                        <input type="submit" value="Submit">
+                        <input type="reset" value="Reset">
+                    </div>
+                </form>
+            </td>
+        </tr>
+    </table class="list" id="StoreList">
+    <script type="text/javascript" src="./script.js"></script>
+</body>
+</html>
